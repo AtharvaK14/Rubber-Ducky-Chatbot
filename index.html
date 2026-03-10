@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- ═══════════ HEADER ═══════════ -->
 <header>
   <div class="logo">
     <div class="duck-icon">🦆</div>
@@ -25,52 +26,94 @@
   </div>
 </header>
 
+<!-- ═══════════ LANGUAGE SELECTOR ═══════════ -->
+<div class="lang-bar">
+  <span class="lang-bar-label">Language</span>
+  <button class="lang-btn active" data-lang="all"        onclick="setLang('all')">🌐 All</button>
+  <button class="lang-btn"        data-lang="python"     onclick="setLang('python')">🐍 Python</button>
+  <button class="lang-btn"        data-lang="javascript" onclick="setLang('javascript')">⚡ JavaScript</button>
+  <button class="lang-btn"        data-lang="cpp"        onclick="setLang('cpp')">⚙️ C / C++</button>
+</div>
+
+<!-- ═══════════ MAIN ═══════════ -->
 <main>
+
   <!-- SIDEBAR: Quick Prompts -->
   <aside class="sidebar">
     <div class="sidebar-title">Quick prompts</div>
 
-    <button class="quick-chip" onclick="sendQuick('I have a TypeError in my Python function')">
-      <span class="chip-tag tag-py">PY</span>TypeError in function
+    <!-- Python -->
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I have a TypeError in my Python function')">
+      <span class="chip-tag tag-py">PY</span>TypeError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I got a NameError, name is not defined')">
-      <span class="chip-tag tag-py">PY</span>NameError undefined
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I got a NameError, name is not defined')">
+      <span class="chip-tag tag-py">PY</span>NameError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have a SyntaxError invalid syntax')">
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I have a SyntaxError invalid syntax')">
       <span class="chip-tag tag-py">PY</span>SyntaxError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I am stuck in an infinite loop')">
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I am stuck in an infinite loop')">
       <span class="chip-tag tag-py">PY</span>Infinite loop
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have a ZeroDivisionError in my code')">
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I have a ZeroDivisionError in my code')">
       <span class="chip-tag tag-py">PY</span>ZeroDivisionError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I am getting an IndexError index out of range')">
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I am getting an IndexError index out of range')">
       <span class="chip-tag tag-py">PY</span>IndexError
     </button>
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I have a FileNotFoundError in Python')">
+      <span class="chip-tag tag-py">PY</span>FileNotFoundError
+    </button>
+    <button class="quick-chip" data-lang="python" onclick="sendQuick('I have an ImportError No module named')">
+      <span class="chip-tag tag-py">PY</span>ImportError
+    </button>
 
-    <button class="quick-chip" onclick="sendQuick('I have an Uncaught TypeError in JavaScript')">
+    <!-- JavaScript -->
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have an Uncaught TypeError in JavaScript')">
       <span class="chip-tag tag-js">JS</span>Uncaught TypeError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have an Uncaught ReferenceError in JavaScript')">
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have an Uncaught ReferenceError in JavaScript')">
       <span class="chip-tag tag-js">JS</span>ReferenceError
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have a Promise rejection unhandled')">
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have a Promise rejection unhandled')">
       <span class="chip-tag tag-js">JS</span>Promise rejection
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have a CORS error in my fetch request')">
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have a CORS error in my fetch request')">
       <span class="chip-tag tag-js">JS</span>CORS error
     </button>
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have maximum call stack size exceeded in JavaScript')">
+      <span class="chip-tag tag-js">JS</span>Stack overflow
+    </button>
+    <button class="quick-chip" data-lang="javascript" onclick="sendQuick('I have EADDRINUSE port is already in use')">
+      <span class="chip-tag tag-js">JS</span>EADDRINUSE
+    </button>
 
-    <button class="quick-chip" onclick="sendQuick('I have a segmentation fault in C++')">
+    <!-- C / C++ -->
+    <button class="quick-chip" data-lang="cpp" onclick="sendQuick('I have a segmentation fault in C++')">
       <span class="chip-tag tag-cpp">C++</span>Segfault
     </button>
-    <button class="quick-chip" onclick="sendQuick('I have a memory leak in my C++ application')">
+    <button class="quick-chip" data-lang="cpp" onclick="sendQuick('I have a memory leak in my C++ application')">
       <span class="chip-tag tag-cpp">C++</span>Memory leak
     </button>
+    <button class="quick-chip" data-lang="cpp" onclick="sendQuick('I have a linker error undefined reference in C++')">
+      <span class="chip-tag tag-cpp">C++</span>Linker error
+    </button>
+    <button class="quick-chip" data-lang="cpp" onclick="sendQuick('I have a null pointer dereference in C++')">
+      <span class="chip-tag tag-cpp">C++</span>Null pointer
+    </button>
+    <button class="quick-chip" data-lang="cpp" onclick="sendQuick('I have a buffer overflow in C')">
+      <span class="chip-tag tag-cpp">C++</span>Buffer overflow
+    </button>
 
-    <button class="quick-chip" onclick="sendQuick('tell me a joke')">
+    <!-- General -->
+    <button class="quick-chip" data-lang="general" onclick="sendQuick('tell me a joke')">
       <span class="chip-tag tag-gen">FUN</span>Tell me a joke
+    </button>
+    <button class="quick-chip" data-lang="general" onclick="sendQuick('I have a git merge conflict')">
+      <span class="chip-tag tag-gen">GIT</span>Merge conflict
+    </button>
+    <button class="quick-chip" data-lang="general" onclick="sendQuick('my app is slow, how do I fix performance')">
+      <span class="chip-tag tag-gen">ADV</span>Performance
     </button>
   </aside>
 
@@ -86,9 +129,7 @@
         rows="2"
         placeholder="Describe your bug or error... (Enter to send, Shift+Enter for newline)"
       ></textarea>
-      <button class="send-btn" onclick="handleSend()">
-        Send ▶
-      </button>
+      <button class="send-btn" onclick="handleSend()">Send ▶</button>
     </div>
 
     <div class="stats-bar">
@@ -98,13 +139,13 @@
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-value" id="stat-rules">50+</span>
+        <span class="stat-value" id="stat-rules">—</span>
         <span class="stat-label">Rules</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-value" id="stat-langs">3</span>
-        <span class="stat-label">Languages</span>
+        <span class="stat-value" id="stat-lang">All</span>
+        <span class="stat-label">Language</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
@@ -113,8 +154,15 @@
       </div>
     </div>
   </div>
+
 </main>
 
+<!-- Rule files must load before ducky.js -->
+<script src="rules-general.js"></script>
+<script src="rules-python.js"></script>
+<script src="rules-javascript.js"></script>
+<script src="rules-cpp.js"></script>
 <script src="ducky.js"></script>
+
 </body>
 </html>
