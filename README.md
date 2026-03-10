@@ -69,6 +69,10 @@ ducky-project/
 
 ---
 
+ Site is live at `https://atharvak14.github.io/Rubber-Ducky-Chatbot/`
+
+---
+
 ## CLI — Setup and Usage
 
 ### Prerequisites
