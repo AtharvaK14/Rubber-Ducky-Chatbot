@@ -69,23 +69,6 @@ ducky-project/
 
 ---
 
-## Web App — Deployment
-
-### GitHub Pages
-
-1. Create a new GitHub repository
-2. Push all files to the root of the `main` branch
-3. Go to **Settings → Pages → Source**: set branch `main`, folder `/ (root)`
-4. Site goes live at `https://<username>.github.io/<repo-name>/`
-
-No server needed — the entire app runs in the browser.
-
-### Local (no server)
-
-Just open `index.html` directly in any browser. All assets are local; no network requests are made during chat.
-
----
-
 ## CLI — Setup and Usage
 
 ### Prerequisites
