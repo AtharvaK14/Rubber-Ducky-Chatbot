@@ -2,7 +2,7 @@
 
 > *"Explain your bug to a rubber duck. The act of explanation often reveals the solution."*
 
-A conversational debugging assistant built for **CS4811** (Prof. Leo Ureel). Originally a Python terminal chatbot, expanded into a full web app and Node.js CLI that share the same rule files — add a rule once, both interfaces pick it up immediately.
+Originally built as a course project for **CS4811 — Intro to AI** (Prof. Leo Ureel), then continued as an independent project. Started as a Python terminal chatbot; expanded into a full web app and Node.js CLI that share the same rule files — add a rule once, both interfaces pick it up immediately.
 
 ---
 
@@ -305,7 +305,7 @@ General rules (including Catch-All) are always appended last as fallback regardl
 
 ## Origin
 
-Built for **CS4811 — Intelligent Systems** (Master's program, Prof. Leo Ureel) as an ELIZA-style pattern-matching chatbot in Python. Ported to JavaScript, expanded with multi-language error rules, and restructured into a modular web app + shared CLI.
+Originally built as a course project for **CS4811 — Intro to AI** (Master's program, Prof. Leo Ureel) as an ELIZA-style pattern-matching chatbot in Python. After the course, I continued developing it independently — porting it to JavaScript, expanding error coverage across Python, JavaScript, and C/C++, and restructuring it into a modular web app with a shared Node.js CLI.
 
 ---
 
