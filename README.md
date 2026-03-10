@@ -4,6 +4,8 @@
 
 Originally built as a course project for **CS4811 — Intro to AI** (Prof. Leo Ureel), then continued as an independent project. Started as a Python terminal chatbot; expanded into a full web app and Node.js CLI that share the same rule files — add a rule once, both interfaces pick it up immediately.
 
+Site is live [here](https://atharvak14.github.io/Rubber-Ducky-Chatbot/)
+
 ---
 
 ## Table of Contents
@@ -66,10 +68,6 @@ ducky-project/
 | **JavaScript** | 20 | Uncaught TypeError, ReferenceError, SyntaxError, Unhandled Promise Rejection, CORS, Maximum call stack exceeded, Module not found, ENOENT, EADDRINUSE, null/undefined guards, event listeners, fetch errors, closure/scope, `this` context, JSON.parse, npm, Webpack/Vite, React hooks, TypeScript |
 | **C / C++** | 16 | Segfault, memory leak, undefined behavior, stack overflow, linker errors, null pointer dereference, compilation errors, buffer overflow, use-after-free, race conditions, template errors, smart pointers, STL/iterators, Makefile/CMake, casting, Rule of Five |
 | **General** | 43 | Greetings, jokes, git/merge conflicts, testing, performance, deployment, API requests, SQL queries, regex, security vulnerabilities, dependency issues, code refactoring, and conversation fallbacks |
-
----
-
- Site is live at `https://atharvak14.github.io/Rubber-Ducky-Chatbot/`
 
 ---
 
